@@ -15,8 +15,8 @@ function setup() {
  // createSprite(400, 200, 50, 50);
 
 
- var engine = Engine.create();
- var world = engine.world;
+engine = Engine.create();
+ world = engine.world;
   
  ground = new Ground(100,10,100,10);
  //divider1 = new Division(200,200,300,10)
@@ -25,9 +25,10 @@ function setup() {
 }
 
 function draw() {
-  Engine.uptade(engine);
-  background(0,0,0);  
-  drawSprites();
+  Engine.update(engine);
+
+  background("white");  
+  //drawSprites();
 
   ground.display();
   /*divider1.display();
